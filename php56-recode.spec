@@ -141,16 +141,17 @@ rm $RPM_BUILD_ROOT%{_libdir}/*.la
 %license COPYING COPYING-LIB
 # Changelog is not helpful
 %doc AUTHORS NEWS README THANKS TODO
-#%{_mandir}/*/*
-#%{_infodir}/recode.info*
-#%{_bindir}/*
-#%{_libdir}/librecode.so.3
-#%{_libdir}/librecode.so.3.*
+%{_mandir}/man1/recode.1.gz
+%{_infodir}/recode.info.gz
+%{_bindir}/recode
+%{_libdir}/librecode.so.3
+%{_libdir}/librecode.so.3.7.11
 
 
 %files devel
-#%{_libdir}/*.so
-#%{_includedir}/*
+%{_libdir}/librecode.so
+%{_includedir}/recode.h
+%{_includedir}/recodext.h
 
 
 %changelog
